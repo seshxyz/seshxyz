@@ -1,0 +1,14 @@
+static boolean palindromeCheck(String input)
+{
+    StringBuilder sb = new StringBuilder();
+    input = input.replaceAll("[^a-zA-Zа-яА-Я]","");
+    sb.append(input);
+    String reversed = sb.reverse().toString();
+    if (input.equalsIgnoreCase(reversedInput))
+    {
+        System.out.println("true");
+        return true;
+    }
+    else System.out.println("false");
+    return false;
+}
